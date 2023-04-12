@@ -1,0 +1,54 @@
+/* Style the list element */
+li {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the list element when it's hovered over */
+  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the list element when it's active or selected */
+  li:active,
+  li:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Style the first list element */
+  li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* Style the last list element */
+  li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 0;
+  }
+  
+  /* Style the list item when it's draggable */
+  li[draggable] {
+    cursor: move;
+  }
+  
+  /* Style the list item when it's being dragged */
+  li[draggable].dragging {
+    opacity: 0.5;
+    background-color: lightgray;
+  }
+  
+  /* Style the list item when it's completed */
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
